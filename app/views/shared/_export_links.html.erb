@@ -4,7 +4,7 @@
 	<li><%= link_to "View as plain text", export_project_plan_path(plan.project, plan, :format => "text"), :target => "_blank" %> (Best for copying and pasting)</li>
 	
 	<li>View as PDF (Best for sharing e.g. by email): 
-		<a id="export_configure" class="icon-cog btn-configure" href="<%= settings_plan_path(plan) -%>" title="<%= t('helpers.project.configure') -%>">
+		<a class="icon-cog btn-configure export_configure" href="<%= settings_plan_path(plan) -%>" title="<%= t('helpers.project.configure') -%>">
 			<span class="hide-text"><%= t('helpers.project.configure') -%></span>
 		</a>
 		<%= plan_settings_indicator(plan) %>

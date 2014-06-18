@@ -1,19 +1,27 @@
 $(document).ready(function() {
-  var form,
-       btn = $('#export_configure');
+  // Prevent the click handler from being registered multiple times.
+  // This is due to the buggy way this is included.
+  if (window['has_export_js'])
+    return;
 
-  btn.click(function(e) {
+  window['has_export_js'] = true;
+
+  var forms = {};
+
+  $('.export_configure').click(function(e) {
     e.preventDefault();
+
+    var btn = $(this),
+       href = btn.attr('href'),
+       form = forms[href];
 
     if (form)
       return form.toggle();
 
-    var container = btn.parent();
-
-    $.get($(this).attr('href') + '.partial')
+    $.get(btn.attr('href') + '.partial')
       .done(function(data) {
-        form = $(data)
-          btn.parent().find("ul").first().before(form);
+        forms[href] = $(data);
+        btn.parent().find("ul").first().before(forms[href]);
       })
       .fail(function(data) {
         // Handle failure?
