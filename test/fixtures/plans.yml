@@ -1,11 +1,22 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
-
-#one:
-#  locked: false
-#  project_id: 1
-#  version_id: 1
-#
-#two:
-#  locked: false
-#  project_id: 1
-#  version_id: 1
+---
+plans_001:
+  id: 46
+  locked: 
+  project_id: 853239782
+  version_id: 1065574599
+  created_at: 2014-04-23 02:31:26.000000000 Z
+  updated_at: 2014-04-23 02:31:26.000000000 Z
+plans_002:
+  id: 47
+  locked: 
+  project_id: 853239783
+  version_id: 1065574599
+  created_at: 2014-04-23 16:59:01.000000000 Z
+  updated_at: 2014-04-23 16:59:01.000000000 Z
+plans_003:
+  id: 48
+  locked: 
+  project_id: 853239784
+  version_id: 1065574599
+  created_at: 2014-04-23 17:01:58.000000000 Z
+  updated_at: 2014-04-23 17:01:58.000000000 Z

@@ -6,7 +6,7 @@ class ProjectsController < ApplicationController
 	def index
 		if user_signed_in? then
 			if (current_user.shibboleth_id.nil? || current_user.shibboleth_id.length == 0) && !cookies[:show_shib_link].nil? && cookies[:show_shib_link] == "show_shib_link" then
-				flash.notice = "Would you like to #{view_context.link_to 'link your DMPonline account to your institutional credentials?', user_omniauth_shibboleth_path}".html_safe
+				flash.notice = "Would you like to #{view_context.link_to 'link your DMP Builder account to your institutional credentials?', user_omniauth_shibboleth_path}".html_safe
 			end
 
 			@projects = current_user.projects.filter(params[:filter])
@@ -54,7 +54,7 @@ class ProjectsController < ApplicationController
 			@project = Project.new
 			@project.organisation = current_user.organisation
 			@funders = orgs_of_type(t('helpers.org_type.funder'), true)
-			@institutions = orgs_of_type(t('helpers.org_type.institution'))
+			@institutions = orgs_of_type(t('helpers.org_type.institution')) + orgs_of_type(t('helpers.org_type.organisation'))
 			respond_to do |format|
 			  format.html # new.html.erb
 			  format.json { render json: @project }

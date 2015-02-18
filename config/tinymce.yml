@@ -3,8 +3,8 @@ menubar: false
 toolbar: bold italic | bullist numlist | link | table
 plugins:
   - table
-  - autoresize
   - link
+  #- autoresize
   - paste
 target_list: false 
 autoresize_min_height: 130

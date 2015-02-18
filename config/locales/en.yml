@@ -28,22 +28,24 @@ en:
     am: "am"
     pm: "pm"
 
-  tool_title: "DMPonline"
-  dmponline3_text: "DMPonline previous version"
+  tool_title: "DMP Builder - University of Alberta Libraries"
+  dmponline3_text: "DMP Builder previous version" 
   dcc_name: "Digital Curation Centre"
   welcome_title: "Welcome."
-  welcome_text: "<p>DMPonline has been developed by the <a href='http://dcc.ac.uk' target='_blank'>Digital Curation Centre</a> to help you write data management plans.</p>"
-  screencast_text: "Screencast on how to use DMPonline"
+  welcome_text: "<p>DMP Builder is provided by the University of Alberta Libraries to help you write data management plans.</p>"
+  welcome_links: "<p><a href='http://guides.library.ualberta.ca/content.php?pid=524929&sid=4318282' target='_blank'>Learn about Data Management Plans</a><br/><a href='https://dataverse.library.ualberta.ca' target='_blank'>Looking to share your research data?</a><br/><a href='http://library.ualberta.ca/researchdata' target='_blank'>Find out more about the Libraries\' research data services</a></p>"
+  ccid_message: "Please note that we are currently working on CCID authentication.  Please create a new DMP Builder account.  You will have the option to link your existing account to your CCID when that feature becomes available."
+  
   screencast_error_text: "Your browser does not support the video tag."
 
   admin:
-    org_title: "Organisation name"
-    org: "Organisation"
-    orgs: "Organisations"
-    org_type: "Organisation type"
-    org_parent: "Parent organisation"
-    org_created_message: "Organisation was successfully created."
-    org_updated_message: "Organisation was successfully updated."
+    org_title: "Organization name"
+    org: "Organization"
+    orgs: "Organizations"
+    org_type: "organization type"
+    org_parent: "Parent organization"
+    org_created_message: "Organization was successfully created."
+    org_updated_message: "Organization was successfully updated."
     plans: "Plans"
     title: "Title"
     desc: "Description"
@@ -63,7 +65,7 @@ en:
     firstname: "First name"
     surname: "Surname"
     user: "User"
-    user_org_role: "User role on an Organisation"
+    user_org_role: "User role on an Organization"
     user_role_type: "User role type"
     user_role: "User role"
     role: "Role"
@@ -106,14 +108,14 @@ en:
     org_abbr: "Abbreviation"
     org_desc: "Description"
     org_target_url: "Website"
-    org_type: "Organisation type"
-    parent_org: "Main organisation"
+    org_type: "Organization type"
+    parent_org: "Main organization"
     last_updated: "Last updated"
-    desc_help_text_html: "<div class='tooltip_box'>Please enter information describing your organisation.</div>"
+    desc_help_text_html: "<div class='tooltip_box'>Please enter information describing your organization.</div>"
+    abbre_help_text: "Please enter an abbreviation to your organization's name."
     template_desc_help_text_html: "<div class='tooltip_box'>Enter a description that helps you to differentiate between templates e.g. if you have ones for different audiences.</div>"
-    abbre_help_text: "Please enter an abbreviation to your organisation's name."
     target_url_help_text: "Please enter a web address valid."
-    name_help_text: "Please enter your organisation's name."
+    name_help_text: "Please enter your organization's name."
     guidance_label: "Guidance"
     templates_label: "Templates"
     add_option_label: "Add option"
@@ -263,7 +265,7 @@ en:
     return_home: "Return to the home page"
     admin_area: "Super admin area"
     edit_profile: "Edit profile"
-    view_plans_label: "View plans"
+    view_plans_label: "My plans"
     create_plan_label: "Create plan"
     about_us_label: "About"
     news_label: "News"
@@ -272,15 +274,18 @@ en:
     jisc: "The DCC is funded by"
 
     sign_in: "Sign in"
+    sign_in_text: "If you have an existing account."
     sign_out: "Sign out"
     sign_up: "Sign up"
-    sign_up_text: "New to DMPonline? Sign up today."
+    sign_up_text: "New to DMP Builder? Sign up today."
     signed_in: "Signed in as "
-    institution_sing_in_link: "Or, sign in with your institutional credentials"
-    institution_sing_in: " (UK users only)"
+    institution_sing_in_link: ""
+    institution_sing_in: "CCID authentication coming soon!"
+        
 
     user_name: "Email address"
     email: "Email"
+    org_not_listed: "My organization is not listed."
     valid_email: "You must enter a valid email address."
     user_details_text_html: "<p>Please note that your email address is used as your username. If you change this, remember to use your new email address on sign in.</p>"
     user_details_paragraph_html: "You can edit any of the details below."
@@ -372,15 +377,18 @@ en:
       funder: "Funder"
       institution: "Institution"
       project: "Project"
-      organisation: "Organisation"
-      org_name: "Organisation name"
+      organisation: "Organization"
+      org_name: "Organization name"
       school: "School"
       publisher: "Publisher"
       other_guidance: "Other guidance"
       template: "Template"
       templates: "Templates"
       child: "Unit"
-      other_org_help_text: "Please enter the name of your organisation."
+      other_org_help_text: "Please enter the name of your organization."
+    
+      
+     
 
 
     project:
@@ -415,11 +423,15 @@ Select what format you wish to use and click to 'Export'.</p>"
       project_settings_text: "The items you select here will be displayed in the table below. You can sort the data by each of these headings or filter by entering a text string in the search box."
       project_text_when_no_project: "<p><strong>Welcome.</strong></br> You are now ready to create your first DMP.</br>Click the 'Create plan' button below to begin.</p>"
       project_text_when_project: "<p>The table below lists the plans that you have created, and any that have been shared with you by others.</br>These can be edited, shared, exported or deleted at anytime.</p>"
+      confirmation_text: "Confirm plan details"   
+      confirmation_text_desc: "You are using the generic University of Alberta data management template. If you have suggestions on how to improve the existing template, or if you would like to add additional templates based on funding agency requirements or disciplinary needs, please contact us at <a href='mailto:data@ualberta.ca?Subject=DMP%20Builder%20inquiry'>data@ualberta.ca</a>."
+      confirmation_button_text: "Yes, create plan"  
       project_details_text_html: "This page gives you an overview of your plan. It tells what your plan is based on and gives an overview of the questions that you will be asked."
       project_details_editing_text_html: "Please fill in the basic project details below and click 'Update' to save"
       confirm_delete_text: "Are you sure you wish to delete this plan? If the plan is being shared with other users, by deleting it from your list, the plan will be deleted from their plan list as well"
       confirmation_text: "Confirm plan details"
-      confirmation_text_desc: "Where your funder or institution doesn't have specific requirements (or if you left these options blank), you will see the DCC Checklist. This offers a generic set of DMP questions and guidance. For more details see: <a href='http://www.dcc.ac.uk/sites/default/files/documents/resource/DMP_Checklist_2013.pdf' target='_blank'>DMP checklist 2013</a>."
+      confirmation_text_desc: "You are using the generic University of Alberta data management template. If you have suggestions on how to improve the existing template, or if you would like to add additional templates based on funding agency requirements or disciplinary needs, please contact us at <a href='mailto:data@ualberta.ca?Subject=DMP%20Builder%20inquiry'>data@ualberta.ca</a>."
+      
       confirmation_button_text: "Yes, create plan"
       default_confirmation_text_desc: "You have selected the Default DMP, which is based on the DCC Checklist. This offers a generic set of DMP questions and guidance. For more details see: <a href='http://www.dcc.ac.uk/sites/default/files/documents/resource/DMP_Checklist_2013.pdf' target='_blank'>DMP checklist 2013</a>."
       default_confirmation_button_text: "Create plan"
@@ -427,7 +439,7 @@ Select what format you wish to use and click to 'Export'.</p>"
       share:
         tab_share: "Share"
         shared_label: "Shared?"
-        share_text_html: "<p>You can give other people access to your plan here. There are three permission levels.<ul><li>Users with \"read only\" access can only read the plan.</li><li>Editors can contribute to the plan.</li><li>Co-owners can also contribute to the plan, but additionally can edit the plan details and control access to the plan.</li></ul></p><p>Add each collaborator in turn by entering their email address below, choosing a permission level and clicking \"Add collaborator\".</p><p>Those you invite will receive an email notification that they have access to this plan, inviting them to register with DMPonline if they don't already have an account. A notification is also issued when a user's permission level is changed.</p>"
+        share_text_html: "<p>You can give other people access to your plan here. There are three permission levels.<ul><li>Users with \"read only\" access can only read the plan.</li><li>Editors can contribute to the plan.</li><li>Co-owners can also contribute to the plan, but additionally can edit the plan details and control access to the plan.</li></ul></p><p>Add each collaborator in turn by entering their email address below, choosing a permission level and clicking \"Add collaborator\".</p><p>Those you invite will receive an email notification that they have access to this plan, inviting them to register with DMP Builder if they don't already have an account. A notification is also issued when a user's permission level is changed.</p>"
         collaborators: "Collaborators"
         add_collaborator: "Add collaborator"
         add: "Add"
@@ -439,17 +451,19 @@ Select what format you wish to use and click to 'Export'.</p>"
         co_owner: "Co-owner"
         edit: "Edit"
         read_only: "Read only"
-      create_page:
+      export:
+        generated_by: "This document was generated by DMP Builder (http://dmp.library.ualberta.ca)"
+      create_page: 
         title: "Create a new plan"
         desc_html: "<p>Please select from the following drop-downs so we can determine what questions and guidance should be displayed in your plan.</p>
         <p>If you aren't responding to specific requirements from a funder or an institution, <a id='create-default-plan-button' data-toggle='modal' href='#default-template-confirmation-dialog'>select here to write a generic DMP</a> based on the most common themes.</p>"
         default_template: "Default DMP"
         funders_question: "If applying for funding, select your research funder."
         funders_question_description: "Otherwise leave blank."
+        institution_question: "To see institutional questions and/or guidance, select your organization."
+        institution_question_description: "You may leave blank or select a different organization to your own."
+        other_guidance_question: "Tick to select any other sources of guidance you wish to see."  
         other_funder_name_label: "Name of funder, if applicable."
-        institution_question: "To see institutional questions and/or guidance, select your organisation."
-        institution_question_description: "You may leave blank or select a different organisation to your own."
-        other_guidance_question: "Tick to select any other sources of guidance you wish to see."
       configure: "Configure"
       columns:
         name: "Name"
@@ -520,114 +534,44 @@ Select what format you wish to use and click to 'Export'.</p>"
           invalid_max_pages: "Invalid maximum pages"
 
   about_page:
-    title: "About DMPonline"
+    title: "About the DMP Builder"
     body_text_html: "<div class='white_background'>
-    <p>Funding bodies increasingly require their grant-holders to produce Data Management Plans(DMP), both during the bid-preparation stage and after funding has been secured. DMPonline has been produced by the UK's Digital Curation Centre to help research teams respond to this requirement, and any expectations that their institution or others may apply.</p>
-    <p>The <a href='http://www.dcc.ac.uk/' target='_blank'>DCC</a> has worked closely with research funders and universities to produce a tool that assists researchers to produce an effective data management plan (DMP) to cater for the whole lifecycle of a project, from bid-preparation stage through to completion.</p>
+    <p>
+    There is a growing call for researchers to prepare data management plans. The University of Alberta has adopted a <a href='https://policiesonline.ualberta.ca/PoliciesProcedures/Procedures/Research-Records-Stewardship-Guidance-Procedure.pdf' target='_blank'>research records stewardship policy</a>, which describes how research data and associated records should be managed and preserved. It is also becoming more common for funding agencies to ask for data management plans (DMP) as part of grant requirements.
+    </p>
+    <p>
+    The University of Alberta Libraries has provided this tool for data management plans (DMP Builder) to help researchers with  data management planning process. This tool is powered by DMPOnline, which is produced by the <a href='http://www.dcc.ac.uk/' target='_blank'>Digital Curation Centre</a> in the UK.  All data is locally hosted here at the University of Alberta.  See our <a href='/terms'>terms of use</a> for more information. 
+    </p>
     </div>
     <h3>How the tool works</h3>
     <div class='white_background'>
-    <p>There are a number of templates within the tool that represent the requirements of different funders and institutions. Users are asked three questions at the outset so we can determine the appropriate template to display (e.g. the ESRC template when applying for an ESRC grant). Guidance is provided to help you interpret and answer the questions. This guidance is provided by researcher funders, universities and disciplines.</p>
+    <p>Currently, this tool includes a generic University of Alberta DMP template for researchers to use.  Guidance is provided to help you interpret and answer the questions.</p>
+    <p>We want your feedback! If you have suggestions on how to improve the existing template, or you would like to add additional templates based on funding agency requirements or disciplinary needs, please contact us at <a href='mailto:data@ualberta.ca?Subject=DMP%20Builder%20feedback'>data@ualberta.ca</a>.
+    </p>
     </div>
     <h3>Getting Started</h3>
     <div class='white_background'>
-    <p>If you have an account please sign in and start creating or editing your DMP.</p>
-    <p>If you do not have a DMPonline account, click on <a href='/'>'Sign up'</a> on the homepage.</p>
+    
+    <p>If you have an account, please sign in and start creating or editing your DMP.</p>
+    <p>If you do not have a DMP Builder account, click on <a href='/'>'Sign up'</a> on the homepage.</p>
+    <p>Please note that we are currently working on CCID authentication. You will have the option to link your existing account to your CCID when that feature becomes available.</p>
     <p>Please visit the <a href='/help'>'Help'</a> page for guidance.</p>
     </div>
-    <h3>Additional Information</h3>
+    <h3>Feedback</h3>
     <div class='white_background'>
-    <p>We are constantly improving the user interface and functionality of DMPonline.
-    If you would like to contribute with feedback and suggestions, please contact us by emailing
-    <a href='mailto:dmponline@dcc.ac.uk?Subject=DMPonline%20inquiry' target='_top'>dmponline@dcc.ac.uk</a>. You can also report bugs and request new features directly on <a href='https://github.com/DigitalCurationCentre/DMPonline_v4' target='_top'>GitHub</a></p>
-    <p>If you need to access plans from the earlier version of the tool please visit <a href='https://dmponline3.dcc.ac.uk' target='_top'>DMPonline v3</a>.</p></div>"
-
+    <p>If you have any questions or comments about the DMP Builder, email us at <a href='mailto:data@ualberta.ca?Subject=DMP%20Builder%20feedback'>data@ualberta.ca</a>.</p>
+    </div>"
+    
+    
 
   help_page:
     title: "Help"
-    tab_1: "On DMPonline"
+    tab_1: "On DMP Builder"
     tab_2: "On data management planning"
-    body_text_tab_2_html: "<h3>Useful resources on Data Management Planning</h3>
-      <ul class='help_ul'>
-        <li>
-          <a target='_blank' href='http://www.dcc.ac.uk/resources/data-management-plans/funders-requirements'>UK funder requirements for Data Management Plans</a> [webpage]<br />
-  A summary of requirements from UK Research Councils and other charitable or health funders.
-        </li>
-        <li>
-          <a target='_blank' href='https://dmp.cdlib.org/pages/funder_requirement'>US funder requirements for Data Management Plans</a> [webpage]<br />
-  A summary of requirements from the NSF, NIH and other key funders in the USA.
-        </li>
-        <li>
-          <a target='_blank' href='http://www.dcc.ac.uk/sites/default/files/documents/resource/DMP_Checklist_2013.pdf'>DCC Checklist for a Data Management Plan</a> [PDF, 3 pages]<br />
-  A list of 13 questions and associated guidance, that represent the main issues to come up in Data Management and Sharing Plans. The Checklist is used as a generic template in DMPonline, and is presented when no funder or organsiational requirements are applicable for the user.
-        </li>
-        <li>
-          <a target='_blank' href='http://www.dcc.ac.uk/sites/default/files/documents/publications/reports/guides/How%20to%20Develop.pdf'>How to develop a Data Management and Sharing Plan</a> [PDF, 8 pages]<br />A guide by the Digital Curation Centre that outlines typical funder requirements for DMPs and the types of considerations to make when responding.
-        </li>
-     </ul>
-    <h3>Example Data Management Plans</h3>
-    <ul class='help_ul'>
-      <li>
-        <a target='_blank' href='http://data.bris.ac.uk/research/planning/files/2013/08/data.bris-AHRC-example-Technical-Plan-v2.pdf'>Technical plan submitted to the AHRC</a> [PDF, 7 pages]<br />
-  A DMP submitted by a researcher from the University of Bristol, also including comments from the reviewers
-      </li>
-      <li>
-        <a target='_blank' href='http://www.dcc.ac.uk/sites/default/files/documents/adocs/Leeds-RoaDMaP-DMPs.pdf'>Two social science DMPs</a> [PDF, 7 pages]<br />
-  Example plans from researchers at the University of Leeds, shared as part of the Leeds RoaDMaP training materials
-      </li>
-      <li>
-        <a target='_blank' href='http://relu.data-archive.ac.uk/data-sharing/planning/examples'>Rural Economy & Land Use (RELU) programme examples</a> [webpage]<br />
-  Two examples from a joint ESRC, BBSRC and NERC programme
-      </li>
-      <li>
-        <a target='_blank' href='http://www.northumbria.ac.uk/static/5007/ceispdf/dmpfull.pdf'>Health sciences DMP</a> [PDF, 11 pages]<br />
-  Example DMP produced by the DATUM for Health RDM training project
-      </li>
-      <li>
-        <a target='_blank' href='http://www.dcc.ac.uk/sites/default/files/documents/adocs/DMTpsych-example-DMP.pdf'>Psychology DMP</a> [PDF, 11 pages]<br />
-  A very detailed, fictional psychology DMP produced by the DMTpsych RDM training project, based on a seminal psychology experiment
-      </li>
-      <li>
-        <a target='_blank' href='http://rci.ucsd.edu/data-curation/examples.html'>UCSD Example Data Management Plans</a> [webpage]<br />
-  Over 20 example plans submitted to the National Science Foundation (NSF) in the United States by academics at UC San Diego
-      </li>
-      <li>
-        <a target='_blank' href='http://inside.mines.edu/RDS-example-plans'>Colorado School of Mines examples</a> [webpage]<br />
-  A variety of US example DMPs from Mines and elsewhere
-      </li>
-      <li>
-        <a target='_blank' href='https://www.dataone.org/data-management-planning'>NSF data management plans</a> [webpage]<br />
-  5 DMPs submitted to the NSF, shared by the DataOne initiative
-      </li>
-      <li>
-        <a target='_blank' href='http://library.umassmed.edu/necdmc/dmp'>Biology and chemistry DMPs</a> [webpage]<br />
-  Three example DMPs from the USA shared by NECDMC, an instructional tool for teaching RDM to undergraduates, graduate students, and researchers in the health sciences, sciences and engineering.
-      </li>
-    </ul>
-    <h3>Useful guides on Research Data Management in general</h3>
-    <ul class='help_ul'>
-      <li>
-        <a target='_blank' href='http://www.data-archive.ac.uk/media/2894/managingsharing.pdf'>Managing and Sharing Data: best practice for researchers</a> [PDF, 36 pages]<br />
-  A guide by the UK Data Service covering a range of topics including data formats, documentaion, ethics, copyright and data sharing.
-      </li>
-      <li>
-        <a target='_blank' href='http://www.dcc.ac.uk/sites/default/files/documents/publications/reports/guides/How_to_Cite_Link.pdf'>How to Cite Datasets and Link to Publications</a> [PDF, 12 pages]<br />
-  A guide by the Digital Curation Centre giving practical guidelines on how to cite data and the different tools and infrastructure that can be used to support data citation.
-      </li>
-      <li>
-        <a target='_blank' href='http://www.dcc.ac.uk/sites/default/files/documents/publications/reports/guides/How_To_License_Research_Data.pdf'>How to License Research Data</a> [PDF, 16 pages]<br />
-  A guide by the Digital Curation Centre that outlines different types of licenses, the pros and cons of each and how they can be applied.
-      </li>
-      <li>
-        <a target='_blank' href='http://www.dcc.ac.uk/sites/default/files/documents/How%20to%20Appraise%20and%20Select%20Research%20Data.pdf'>How to Appraise and Select Research Data for Curation</a> [PDF, 8 pages]<br />
-  A guide by ANDS and the DCC on how to select which data to keep for long-term preservation, sharing and reuse. The guide puts forward several criteria to aid selection decisions.
-      </li>
-      <li>
-        <a target='_blank' href='http://datalib.edina.ac.uk/mantra'>Research Data MANTRA</a> [online resource]<br />
-  An online training course designed for researchers or others planning to manage digital data as part of the research process. The course includes a number of software practicals on using SPSS, R, ArcGIS and NVivo.
-      </li>
-    </ul>"
-    body_text_tab_1_html: "<p>When you login to DMPonline you will be directed to the 'My plans' page. From here you can edit, share, export or delete any of your plans. You will also see plans that have been shared with you by others.</p>
+    body_text_tab_2_html: "<p>The University of Alberta Libraries <a href='http://guides.library.ualberta.ca/researchdata'>research data management guide</a> can provide additional guidance on data management planning. If you require more guidance, email <a href='mailto:data@ualberta.ca?Subject=DMP%20Builder%20help'>data@ualberta.ca</a>.</p>"
+
+
+    body_text_tab_1_html: "<p>When you login to DMP Builder you will be directed to the 'My plans' page. From here you can edit, share, export or delete any of your plans. You will also see plans that have been shared with you by others.</p>
     <h3>Create a plan</h3>
     <p>To create a plan, click the 'Create plan' button from the 'My plans' page or  the top menu. Select options from the drop-down menus and tickboxes to determine what questions and guidance you should be presented with. Confirm your selection by clicking 'Yes, create plan'</p>
     <h3>Write your plan</h3>
@@ -644,54 +588,35 @@ Select what format you wish to use and click to 'Export'.</p>"
     <h3>Share plans</h3>
     <p>Insert the email address of any collaborators you would like to invite to read or edit your plan. Set the level of permissions you would like to grant them via the drop-down options and click to 'Add collaborator'</p>
     <h3>Export plans</h3>
-    <p>From here you can download your plan in various formats. This may be useful if you need to submit your plan as part of a grant application. Choose what format you would like to view/download your plan in and click to export. When you login to DMPonline you will be directed to the 'My plans' page. From here you can edit, share, export or delete any of your plans. You will also see plans that have been shared with you by others.</p>
-    <h3>Legacy data</h3>
-    <p>If you need to access plans from the earlier version of the tool please visit <a href='https://dmponline3.dcc.ac.uk' target='_top'>DMPonline v3</a>.</p>"
+    <p>From here you can download your plan in various formats. This may be useful if you need to submit your plan as part of a grant application. Choose what format you would like to view/download your plan in and click to export. When you login to DMP Builder you will be directed to the 'My plans' page. From here you can edit, share, export or delete any of your plans. You will also see plans that have been shared with you by others.</p>"
 
   contact_page:
     title: "Contact us"
-    intro_text_html: "<p>DMPonline is provided by the Digital Curation Centre. You can find out more about us on our <a href='http://www.dcc.ac.uk/' target='_blank'>website</a>. If you would like to contact us about DMPonline, please enter your query in the form below or email <a href='mailto:dmponline@dcc.ac.uk?Subject=DMPonline%20inquiry' target='_top'>dmponline@dcc.ac.uk</a>.</p>"
-    github_text_html: "<p>If you have a feature request or think you have found a bug, please check out the <a href='https://github.com/DigitalCurationCentre/DMPonline_v4/issues?state=open'>list of issues on GitHub</a>. If your issue isn't listed there, please add it; if it is, please add a comment if you have more information or just to let us know how important it is to you. This will help us to help us prioritise future developments.</p>"
-    address_text_html: "<ul>
-      <li>Digital Curation Centre</li>
-      <li>Level 7, Appleton Tower</li>
-      <li>Crichton Street</li>
-      <li>Edinburgh</li>
-      <li>EH8 9LE</li>
-      <li>UK</li>
-     </ul>
-     <p>Tel. +44 (0) 131 651 1239</p>
-     <p>Email <a href='mailto:dmponline@dcc.ac.uk?Subject=DMPonline%20inquiry' target='_top'>dmponline@dcc.ac.uk</a></p>"
-
+    intro_text_html: "<p>DMP Builder is provided by the University of Alberta Libraries. You can find out more about us on our <a href='http://library.ualberta.ca/researchdata/' target='_blank'>Research Data Management page</a>. If you would like to contact us about DMP Builder, please insert your query into the webform below or email <a href='mailto:data@ualberta.ca?Subject=DMP%20Builder%20inquiry' target='_top'>data@ualberta.ca</a>.</p>
+     <p><a href='http://library.ualberta.ca/askus/' target='_blank'>Contact Us</a></p>"
+  
   terms_page:
-    title: "Terms of use"
-    body_text_html: "<div class='white_background'>
-    <p>The Digital Curation Centre ('DCC') is a consortium supported by Jisc and based at the Universities of Edinburgh, Glasgow and Bath. Our primary constituency is the UK research community, particularly the higher and further education sector.</p>
-    </div>
-    <h3>DMPonline</h3>
+    title: "Licensing and terms of use"
+    body_text_html: "
+
     <div class='white_background'>
-      <p>DMPonline ('the tool', 'the system') is a tool developed by the DCC as a shared resource for the research community. It is hosted at the University of Edinburgh.</p>
+    <p>The University of Alberta Libraries' DMP Builder is powered by an open source application called <a href='https://dmponline.dcc.ac.uk'>DMPOnline</a>, which is developed by the Digital Curation Centre (DCC) and shared under an <a href='http://www.gnu.org/licenses/agpl-3.0.html'>AGPL license.</a></p>
+
+    <p>To the extent possible under law, University of Alberta Libraries has waived all copyright and related or neighboring rights to the DMP Builder website content and data management planning templates (but not the plans themselves) under a <a href='http://creativecommons.org/publicdomain/zero/1.0/'>Creative Commons Zero License.</a></p>
+
+    <p><a href='http://creativecommons.org/publicdomain/zero/1.0/'><img src='http://i.creativecommons.org/p/zero/1.0/88x31.png' alt='CC0' /></a></p>
     </div>
-    <h3>Your personal details</h3>
+
+    <h3>Your personal information</h3>
     <div class='white_background'>
-      <p>In order to help identify and administer your account with DMPonline, we need to store your email address. We may also use it to contact you to obtain feedback on your use of the tool, or to inform you of the latest developments or releases. The information may be transferred between the DCC partner institutions but only for legitimate DCC purposes. We will not sell, rent or trade any personal information you provide to us.</p>
+      <p>The University of Alberta Libraries hosts the DMP Builder and stores your data management plans on your behalf, but the plans are your property and responsibility. Information stored by the DMP Builder is governed by the University of Alberta Libraries <a href='http://www.library.ualberta.ca/privacy/'>website privacy policy</a>.</p>
     </div>
-    <h3>Privacy policy</h3>
-    <div class='white_background'>
-      <p>The information you enter into this system can be seen by you, people you have chosen to share access with, and - solely for the purposes of maintaining the service - system administrators at the University of Edinburgh.  We compile anonymised, automated and aggregated information from plans, but we will not directly access, make use of, or share your content with anyone else without your permission. Authorised officers of your home institution may access your plans for specific purposes - for example, to track compliance with funder/institutional requirements or to calculate storage requirements.</p>
-    </div>
-    <h3>Freedom of Information</h3>
-    <div class='white_background'>
-      <p>The University of Edinburgh holds your plans on your behalf, but they are your property and responsibility. Any FOI applicants will be referred back to your home institution.</p>
-    </div>
+
     <h3>Passwords</h3>
     <div class='white_background'>
       <p>Your password is stored in encrypted form and cannot be retrieved. If forgotten it has to be reset.</p>
     </div>
-    <h3>Cookies</h3>
-    <div class='white_background'>
-      <p>Please note that DMPonline uses Cookies. Further information about Cookies and how we use them is available on the <a target='_blank' href='http://www.dcc.ac.uk/about-us/about-site/website-terms-use/cookies'>main DCC website</a>.</p>
-    </div>
+    
     <br />
     <div class='white_background'>
     <p>Use of the tool indicates that you understand and agree to these terms and conditions.</p></div>"

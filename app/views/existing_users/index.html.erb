@@ -1,6 +1,6 @@
 <div class="welcome-message">
 	<h2><%= raw t('welcome_title')%></h2>
-	<p>Welcome to the new DMPonline!</p>
+	<p>Welcome to the new DMP Builder!</p>
 	<p>We need to check a few details.</p>
 </div>
 <div class="accordion" id="homepage-accordion">
@@ -27,7 +27,7 @@
 		<% other_organisations << org.id %>
 	<% end %>
 	<li id="other-organisation-name" style="display:none" data-orgs="<%= other_organisations.join(',') %>">
-		<%= f.text_field :other_organisation, placeholder: "Organisation Name", :class => 'text_field has-tooltip reg-input', 'data-toggle' => "tooltip", 'data-container' => "body", 'title' => "Please enter the name of your organisation." %>
+		<%= f.text_field :other_organisation, placeholder: "Organization Name", :class => 'text_field has-tooltip reg-input', 'data-toggle' => "tooltip", 'data-container' => "body", 'title' => "Please enter the name of your organization." %>
 		<div class="alert alert-error" style="display:none">  
 			<strong>Error!</strong> You must enter a valid email address.  
 		</div> 

@@ -1,0 +1,88 @@
+<!-- header information -->
+
+<header class="ubc-header">
+	<div class='header_left'>
+		<div class="home_logo">
+			<%= link_to( image_tag('UBC_logo.png'), "http://www.ubc.ca")%>
+		</div>
+<h3 class="subhead"><a href="http://dmp.library.ualberta.ca">A Tool for Data Management Plans</a></h3>
+	</div>
+	<div class="header_right">	
+		<div class="signIn">
+			<ul class="navbar">
+				<% if user_signed_in? %>
+	            	<li class="dropdown sign_in">
+	                	<a class="dropdown-toggle" data-toggle="dropdown" href="#"><%= t('helpers.signed_in')%>
+	                	  	<%= current_user.name %> <b class="caret"></b>
+	                	</a>
+						<ul class="dropdown-menu" id="signIn_dropdown">
+							<li><%= link_to t('helpers.edit_profile'), edit_user_registration_path, :class => 'signIn_dropdown_link' %></li>
+							<% if current_user.is_admin? %>
+								<li><%= link_to t('helpers.admin_area'), '/admin', :class => 'signIn_dropdown_link' %></li>
+							<%end%>	
+							<% if current_user.is_org_admin? %>
+								<li><%= link_to t('org_admin.admin_area'), admin_index_dmptemplate_path(current_user.organisation_id), :class => 'signIn_dropdown_link' %></li>
+							<%end%>	
+							<li><%= link_to t('helpers.sign_out'), destroy_user_session_path, method: :delete, :class => 'signIn_dropdown_link' %></li>
+							
+						</ul>
+	            	</li>
+	            <% else %>
+	            	
+	            	<li>
+	            	<% unless controller_name == "home" && action_name == "index" then %>
+						<a href="#header-login-form" data-toggle="modal"><%= t('helpers.sign_in')%></a> / 
+						<a href="#header-register-form" data-toggle="modal"><%= t('helpers.sign_up')%></a>
+					<% else %>
+                  <%= raw "&nbsp;" %>
+                <% end %>
+					</li>
+				<% end %> 
+			</ul>
+		</div>	
+		<!-- main menu -->
+		<div class="main_nav">
+			<ul class="nav nav-pills">
+				<!-- Navigation for organisation admin -->
+                <% if (user_signed_in? && current_user.is_org_admin? && ( action_name.include? "admin_" ) ) %>
+                	<li>
+	                    <%= link_to t('org_admin.template_label'), admin_index_dmptemplate_path(current_user.organisation_id), :class => "btn header_button btn-primary" %>
+	                </li>    
+	                <li>
+	                	<%= link_to t('org_admin.guidance_label'), admin_index_guidance_path(current_user.organisation_id), :class => "btn header_button btn-primary"%>
+	                </li>
+	                <li>
+	                	<%= link_to t('org_admin.org_details_label'), admin_show_organisation_path(current_user.organisation_id), :class => "btn header_button btn-primary"%>
+	                </li>
+	                <li>
+	                	<%= link_to t('org_admin.user_list_label'), '/org/admin/users', :class => "btn header_button btn-primary"%>
+	                </li>
+                <% else %>
+                	<% if user_signed_in? %>
+		           		<li>
+		                    <%= link_to t('helpers.view_plans_label'), projects_path, :class => "btn header_button btn-primary" %>
+		                </li>    
+		                <li>
+		                	<%= link_to t('helpers.create_plan_label'), '/projects/new', :class => "btn header_button btn-primary"%>
+		                </li>
+			                 
+	                <% else %>
+	                	<li>
+	                    	<%= link_to t('helpers.home'), root_path , :class => "btn header_button btn-primary"%>            
+	                	</li>
+	                <% end %>
+	           		<li>
+						<%= link_to t('helpers.about_us_label'), '/about_us', :class => "btn header_button btn-primary"%>
+					</li>
+					<!--<li>
+						<%= link_to t('helpers.news_label'), '/news', :class => "btn header_button btn-primary"%>
+					</li>-->
+					<li class="last_li">
+	                    <%= link_to t('helpers.help_label'), '/help', :class => "btn header_button btn-primary"%>
+	            	</li>
+	            <%end%>	
+	      	</ul>
+         	          		
+    	</div>	
+	</div>
+</header>    

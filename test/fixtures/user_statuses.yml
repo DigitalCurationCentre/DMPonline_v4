@@ -1,9 +1,7 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
-
-#one:
-#  name: MyString
-#  description: MyText
-#
-#two:
-#  name: MyString
-#  description: MyText
+---
+user_statuses_001:
+  id: 1
+  name: Active
+user_statuses_002:
+  id: 2
+  name: Archived

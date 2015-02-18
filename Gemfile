@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.13'
+gem 'rails', '3.2.21'
 
 gem 'mysql2'
 gem 'omniauth'
@@ -22,8 +22,6 @@ end
 gem 'uglifier', '>= 1.0.3'
 gem 'less-rails'
 
-gem 'therubyracer', '0.11.4', platforms: :ruby
-gem 'libv8'
 gem 'twitter-bootstrap-rails'
 gem 'sass-rails',   '~> 3.2.3'
 gem 'sass', '3.2.10'
@@ -31,7 +29,7 @@ gem 'sass', '3.2.10'
 gem 'jquery-rails', "2.3.0"
 #gem 'jquery-ui-rails'
 
-gem 'tinymce-rails'
+gem 'tinymce-rails', "4.0.19"
 gem 'friendly_id'
 gem 'contact_us', '~> 0.4.0'
 
@@ -42,7 +40,7 @@ gem 'activeadmin'
 gem 'amoeba'
 
 # devise for user authentication
-gem 'devise', '3.0.0'
+gem 'devise', '3.0.1'
 gem 'devise_invitable', '>= 1.2.1'
 
 #cancan for usergroups
@@ -78,5 +76,22 @@ gem 'feedzirra', '0.5.0'
 # To use debugger
 # gem 'debugger'
 
+group :development, :test do
+  gem 'rspec-rails', '~> 2.14.0'
+  gem 'rspec', '~> 2.14.0'
+  gem 'selenium-webdriver'
+  gem 'pdf-reader'
+end
+
+group :ci do
+  gem 'ci_reporter', '1.9.2'
+end
+
+group :production do
+  gem 'therubyracer', '0.11.4', platforms: :ruby
+  gem 'libv8'
+end
+
+gem 'syslog-logger'
 gem 'ledermann-rails-settings'
 gem 'jbuilder'

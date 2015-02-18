@@ -1,9 +1,17 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+---
+user_types_001:
+  id: 1
+  name: Developer
+  description: ''
+user_types_002:
+  id: 2
+  name: Project Manager
+  description: ''
+user_types_003:
+  id: 3
+  name: Archivist
+  description: ''
+user_types_004:
+  id: 4
+  name: Librarian
 
-#one:
-#  name: MyString
-#  description: MyText
-#
-#two:
-#  name: MyString
-#  description: MyText

@@ -4,7 +4,7 @@ Devise.setup do |config|
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class with default "from" parameter.
-  config.mailer_sender = "info@dcc.ac.uk"
+  config.mailer_sender = "data@ualberta.ca"
 
   # Configure the class responsible to send e-mails.
   # config.mailer = "Devise::Mailer"
@@ -52,10 +52,10 @@ Devise.setup do |config|
   # It can be set to an array that will enable http authentication only for the
   # given strategies, for example, `config.http_authenticatable = [:token]` will
   # enable it only for token authentication. The supported strategies are:
-  # :database      = Support basic authentication with authentication key + password
-  # :token         = Support basic authentication with token authentication key
+  # :database = Support basic authentication with authentication key + password
+  # :token = Support basic authentication with token authentication key
   # :token_options = Support token authentication with options as defined in
-  #                  http://api.rubyonrails.org/classes/ActionController/HttpAuthentication/Token.html
+  # http://api.rubyonrails.org/classes/ActionController/HttpAuthentication/Token.html
   # config.http_authenticatable = false
 
   # If http headers should be returned for AJAX requests. True by default.
@@ -83,10 +83,10 @@ Devise.setup do |config|
   # Limiting the stretches to just one in testing will increase the performance of
   # your test suite dramatically. However, it is STRONGLY RECOMMENDED to not use
   # a value less than 10 in other environments.
-  	config.stretches = Rails.env.test? ? 1 : 10
+  config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
-  config.pepper = "de451fa8d44af2c286d922f753d1b10fd23b99c10747143d9ba118988b9fa9601fea66bfe31266ffc6a331dc7331c71ebe845af8abcdb84c24b42b8063386530"
+  config.pepper = "C5vvrxyzKoXq4aeU0GxXgW2QhSgbXiJEXqlVxa0tFYNHSJNfydZnE0BeUPOnK12i"
   
   # ==> Configuration for :invitable
   # The period the generated invitation token is valid, after
@@ -169,7 +169,7 @@ Devise.setup do |config|
   # ==> Configuration for :lockable
   # Defines which strategy will be used to lock an account.
   # :failed_attempts = Locks an account after a number of failed attempts to sign in.
-  # :none            = No lock strategy. You should handle locking by yourself.
+  # :none = No lock strategy. You should handle locking by yourself.
   # config.lock_strategy = :failed_attempts
 
   # Defines which key will be used when locking and unlocking an account
@@ -177,9 +177,9 @@ Devise.setup do |config|
 
   # Defines which strategy will be used to unlock an account.
   # :email = Sends an unlock link to the user email
-  # :time  = Re-enables login after a certain amount of time (see :unlock_in below)
-  # :both  = Enables both strategies
-  # :none  = No unlock strategy. You should handle unlocking by yourself.
+  # :time = Re-enables login after a certain amount of time (see :unlock_in below)
+  # :both = Enables both strategies
+  # :none = No unlock strategy. You should handle unlocking by yourself.
   # config.unlock_strategy = :both
 
   # Number of authentication tries before locking an account if lock_strategy
@@ -251,8 +251,8 @@ Devise.setup do |config|
   # change the failure app, you can configure them inside the config.warden block.
   #
   # config.warden do |manager|
-  #   manager.intercept_401 = false
-  #   manager.default_strategies(:scope => :user).unshift :some_external_strategy
+  # manager.intercept_401 = false
+  # manager.default_strategies(:scope => :user).unshift :some_external_strategy
   # end
 
   # ==> Mountable engine configurations
@@ -260,7 +260,7 @@ Devise.setup do |config|
   # is mountable, there are some extra configurations to be taken into account.
   # The following options are available, assuming the engine is mounted as:
   #
-  #     mount MyEngine, at: "/my_engine"
+  # mount MyEngine, at: "/my_engine"
   #
   # The router that invoked `devise_for`, in the example above, would be:
   # config.router_name = :my_engine

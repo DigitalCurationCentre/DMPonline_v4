@@ -23,7 +23,7 @@
 	<li>
 		<%= collection_select(:user, :organisation_id, Organisation.where("parent_id IS NULL").order("sort_name ASC, name ASC"), :id, :name, {include_blank: t('helpers.org_type.organisation')}, { :class => 'typeahead org_sign_up' }) %>
 	</li>
-  <div id="other-org-link"><a href="#"><%= t("helpers.org_not_listed") %></a></div>
+	<div id="other-org-link"><a href="#"><%= t("helpers.org_not_listed") %></a></div>
 	<% other_organisations = Array.new %>
 	<% Organisation.where("parent_id IS ? AND is_other = ?", nil, 1).each do |org| %>
 		<% other_organisations << org.id %>

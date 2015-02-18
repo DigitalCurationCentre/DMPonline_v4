@@ -36,13 +36,13 @@ DMPonline4::Application.configure do
   config.assets.debug = true
 
   #devise config
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.action_mailer.default_url_options = { :host => 'houston.library.ualberta.ca' }
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = { :address => "localhost", :port => 1025 }
+  config.action_mailer.smtp_settings = { :address => "localhost", :port => 25 }
   
-  ActionMailer::Base.default :from => 'address@example.com'
+  ActionMailer::Base.default :from => 'data@ualberta.ca'
   ActionMailer::Base.delivery_method = :smtp
-  ActionMailer::Base.smtp_settings = { :address => "localhost", :port => 1025 }
+  ActionMailer::Base.smtp_settings = { :address => "localhost", :port => 25 }
   
   
 	# Add the fonts path

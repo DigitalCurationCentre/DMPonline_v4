@@ -5,10 +5,20 @@
 	  <%= f.hidden_field :invitation_token %>
 	
 	  <p><%= f.label :password %><br />
-	  <%= f.password_field :password %></p>
+	  <!--<%= f.password_field :password %>-->
+	  <%= f.password_field :password, placeholder: (t('helpers.password') + ' *'), :autocomplete => "off", :required => true, :as => :password, :class => 'text_field has-tooltip reg-input', 'data-toggle' => "tooltip", 'data-container' => "body", 'title' => "This must be at least 8 characters long." %>
+		<div class="alert alert-error" style="display:none">  
+			<strong><%= t('helpers.error')%></strong> <%= t('helpers.password_too_small')%> 
+		</div>
+	  </p>
 	
 	  <p><%= f.label :password_confirmation %><br />
-	  <%= f.password_field :password_confirmation %></p>
+	  <!--<%= f.password_field :password_confirmation %>-->
+	  <%= f.password_field :password_confirmation, placeholder: (t('helpers.password_conf') + ' *'), :required => true, :as => :password, :class => 'text_field has-tooltip reg-input', 'data-toggle' => "tooltip", 'data-container' => "body", 'title' => "This must match what you entered in the previous field." %>
+		<div class="alert alert-error" style="display:none">  
+			<strong><%= t('helpers.error')%></strong> <%= t('helpers.password_no_match')%>
+		</div>	
+	  </p>
 	
 	  <p><%= f.submit t("devise.invitations.edit.submit_button") %></p>
 	<% end %>

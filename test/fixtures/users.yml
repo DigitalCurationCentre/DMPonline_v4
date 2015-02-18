@@ -1,3 +1,14 @@
+---
+users_001:
+  id: 5
+  firstname: Test
+  surname: User
+  email: test@test.com
+users_002:
+  id: 6
+  firstname: 
+  surname: 
+  email: dale.storie@ualberta.ca
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 #one:

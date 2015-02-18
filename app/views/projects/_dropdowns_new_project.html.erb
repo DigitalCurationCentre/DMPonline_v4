@@ -9,6 +9,8 @@
 
 			</div>
 			<div class="dropdowns">
+ 
+<!--
 				<div class="control-group" id="funder-control-group">
 					<div class="controls">
 						<%= f.input :funder_id, :as => :select, :collection => @funders, :label => t('helpers.project.create_page.funders_question'), :input_html => { :multiple => false, :class => "typeahead" }, :include_blank =>  t('helpers.org_type.funder') %>
@@ -25,6 +27,7 @@
 						<%= f.input :funder_name, :as => :string, :placeholder => t('helpers.project.funder_name'), :label => t('helpers.project.create_page.other_funder_name_label') %>
 					</div>
 				</div>
+-->
 				<div class="control-group" id="institution-control-group">
 					<div class="controls">
 						<%= f.input :institution_id, :as => :select, :collection => @institutions, :label => t('helpers.project.create_page.institution_question'), :input_html => { :multiple => false, :class => "typeahead" }, :include_blank =>  t('helpers.org_type.organisation')  %>
@@ -56,6 +59,9 @@
 	<% end %>
 	<!-- submit buttons -->
 	<%= f.actions do %>
+<!--
 		<a id="create-plan-button" style="display:none;" data-toggle="modal" href="#project-confirmation-dialog" class="btn btn-primary"><%= t('helpers.project.create')%></a>
+-->
+                <a id="create-plan-button" data-toggle="modal" href="#project-confirmation-dialog" class="btn btn-primary"><%= t('helpers.project.create')%></a>
 	<% end %>
 <% end %>

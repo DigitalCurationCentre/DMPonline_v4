@@ -1,11 +1,4 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
-
-#one:
-#  user_id: 1
-#  organisation_id: 1
-#  user_role_type_id: 1
-#
-#two:
-#  user_id: 1
-#  organisation_id: 1
-#  user_role_type_id: 1
+---
+user_org_roles_001:
+  id: 28
+  user_id: 6
