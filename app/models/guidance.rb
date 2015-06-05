@@ -23,8 +23,11 @@ class Guidance < ActiveRecord::Base
   
     accepts_nested_attributes_for :themes
     accepts_nested_attributes_for :guidance_groups
-  
- 
+
+  #validation - start
+  validates :text, :length => { :minimum => 1 }
+  #validates - end
+
 	#verifies if one guidance belongs to a org
 	def in_group_belonging_to?(organisation_id)
 		guidance_groups.each do |guidance_group|

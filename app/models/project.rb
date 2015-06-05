@@ -2,7 +2,7 @@ class Project < ActiveRecord::Base
 
 	extend FriendlyId
 
-	attr_accessible :dmptemplate_id, :title, :organisation_id, :unit_id, :guidance_group_ids, :project_group_ids, :funder_id, :institution_id, :grant_number, :identifier, :description, :principal_investigator, :principal_investigator_identifier, :data_contact, :funder_name
+	attr_accessible :dmptemplate_id, :title, :organisation_id, :unit_id, :guidance_group_ids, :project_group_ids, :funder_id, :institution_id, :grant_number, :identifier, :description, :principal_investigator, :principal_investigator_identifier, :data_contact, :funder_name, :slug
 
 	#associations between tables
 	belongs_to :dmptemplate
@@ -14,6 +14,10 @@ class Project < ActiveRecord::Base
 	friendly_id :title, use: :slugged, :use => :history
 
 	after_create :create_plans
+
+  #validation - start
+  validates :dmptemplate,:presence => true
+  #validation - end
 
 	def funder_id=(new_funder_id)
 		if new_funder_id != "" then

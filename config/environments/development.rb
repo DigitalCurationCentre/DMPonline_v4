@@ -36,13 +36,13 @@ DMPonline4::Application.configure do
   config.assets.debug = true
 
   #devise config
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.action_mailer.default_url_options = { :host => ENV['DMP_HOST'] }
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = { :address => "localhost", :port => 1025 }
+  config.action_mailer.smtp_settings = { :address => ENV['DMP_SMTP_ADDRESS'], :port => ENV['DMP_SMTP_PORT'] }
   
-  ActionMailer::Base.default :from => 'address@example.com'
+  ActionMailer::Base.default :from => ENV['DMP_EMAIL_FROM']
   ActionMailer::Base.delivery_method = :smtp
-  ActionMailer::Base.smtp_settings = { :address => "localhost", :port => 1025 }
+  ActionMailer::Base.smtp_settings = { :address => ENV['DMP_SMTP_ADDRESS'], :port => ENV['DMP_SMTP_PORT'] }
   
   
 	# Add the fonts path
@@ -54,9 +54,9 @@ DMPonline4::Application.configure do
 	# Error notifications by email
 	 config.middleware.use ExceptionNotification::Rack,
 	  :email => {
-	    :email_prefix => "[DMPonline4 ERROR] ",
-	    :sender_address => %{"No-reply" <noreply@dcc.ac.uk>},
-	    :exception_recipients => %w{dmponline@dcc.ac.uk}
+	    :email_prefix => ENV['DMP_ERR_EMAIL_PREFIX'],
+	    :sender_address => ENV['DMP_ERR_EMAIL_SENDER_ADDRESS'],
+	    :exception_recipients => JSON.parse(ENV['DMP_ERR_EMAIL_EXCEPTION_RECIPIENTS'])
 	  }
 	  
 	

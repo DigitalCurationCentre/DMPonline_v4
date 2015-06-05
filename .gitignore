@@ -68,3 +68,5 @@ config/environments/development.rb
 config/environments/development.rb
 config/environments/development.rb
 db/schema.rb
+
+config/application.yml

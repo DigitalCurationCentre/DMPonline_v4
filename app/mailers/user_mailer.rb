@@ -1,5 +1,5 @@
 class UserMailer < ActionMailer::Base
-	default from: 'info@dcc.ac.uk'
+	default from: ENV['USER_MAILER_EMAIL_FROM']
 	
 	def sharing_notification(project_group)
 		@project_group = project_group

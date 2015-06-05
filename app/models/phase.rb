@@ -21,7 +21,13 @@ class Phase < ActiveRecord::Base
 	attr_accessible :description, :number, :title, :dmptemplate_id
 	
 	friendly_id :title, use: :slugged, :use => :history
-  
+
+  #validation - start
+  validates :dmptemplate, :presence => true
+  validates :title, :length => { :minimum => 1 }
+  validates :number,numericality: { only_integer: true, :greater_than => 0 }
+  #validation - end
+ 
 	def to_s
 		"#{title}"
 	end

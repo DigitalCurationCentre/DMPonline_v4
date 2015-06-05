@@ -72,9 +72,9 @@ DMPonline4::Application.configure do
 	 # Error notifications by email
 	 config.middleware.use ExceptionNotification::Rack,
 	  :email => {
-	    :email_prefix => "[DMPonline4 ERROR] ",
-	    :sender_address => %{"No-reply" <noreply@dcc.ac.uk>},
-	    :exception_recipients => %w{dmponline@dcc.ac.uk}
+	    :email_prefix => ENV['DMP_ERR_EMAIL_PREFIX'],
+	    :sender_address => ENV['DMP_ERR_EMAIL_SENDER_ADDRESS'],
+	    :exception_recipients => JSON.parse(ENV['DMP_ERR_EMAIL_EXCEPTION_RECIPIENTS'])
 	  }
 
   # Log the query plan for queries taking more than this (works

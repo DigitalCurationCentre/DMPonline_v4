@@ -17,7 +17,12 @@ class Version < ActiveRecord::Base
   	"#{title}"
   end
   
-  
+  #validation - start
+  validates :phase,:presence => true
+  validates :title, :length => { :minimum => 1 }
+  validates :number,numericality: { only_integer: true, :greater_than => 0 }
+  #validation - end
+ 
   
   def global_sections
   	sections.find_all_by_organisation_id(phase.dmptemplate.organisation_id)

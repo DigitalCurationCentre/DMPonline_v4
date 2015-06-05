@@ -3,4 +3,8 @@ class UserType < ActiveRecord::Base
 
   #associations between tables
   has_many :users
+
+  #validation - start
+  validates :name, :length => { :minimum => 1 }, :uniqueness => true
+  #validation - end
 end

@@ -71,19 +71,19 @@ module DMPonline4
     config.autoload_paths += %W(#{config.root}/lib)
 
     # Set the default host for mailer URLs
-    config.action_mailer.default_url_options = { :host => 'dmponline.example.com' }
+    config.action_mailer.default_url_options = { :host => ENV['DMP_HOST'] }
     config.active_record.whitelist_attributes = true
 
      # Enable shibboleth as an alternative authentication method
     # Requires server configuration and omniauth shibboleth provider configuration
     # See config/initializers/omniauth.rb
-    config.shibboleth_enabled = true
+    config.shibboleth_enabled = ENV['SHIBBOLETH_ENABLED']
 
     # Absolute path to Shibboleth SSO Login
-    config.shibboleth_login = 'https://localhost/Shibboleth.sso/Login'
+    config.shibboleth_login = ENV['SHIBBOLETH_LOGIN']
 
     WickedPdf.config = {
-	  :exe_path => '/usr/local/bin/wkhtmltopdf'
+	  :exe_path => ENV['WICKED_PDF_EXE']
 	}
 
   end

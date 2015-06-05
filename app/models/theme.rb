@@ -12,6 +12,10 @@ class Theme < ActiveRecord::Base
   attr_accessible :question_ids
   attr_accessible :description, :title, :locale
   
+  #validation - start
+  validates :title, :length => { :minimum => 1 }, :uniqueness => true
+  #validation - end
+ 
   def to_s
   	title
   end

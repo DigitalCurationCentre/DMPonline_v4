@@ -12,7 +12,13 @@ class Dmptemplate < ActiveRecord::Base
     #has_many :guidances                needs to be removed and checked
     
     belongs_to :organisation
-      
+    #validation - start
+    #needed, for the index page fails otherwise
+    validates :organisation, :presence => true
+    #no empty title
+    validates :title, :length => { :minimum => 1 }
+    #validation - end
+     
 	has_and_belongs_to_many :guidance_groups, join_table: "dmptemplates_guidance_groups"
 	
     accepts_nested_attributes_for :guidance_groups

@@ -25,6 +25,12 @@ class Question < ActiveRecord::Base
   								:number, :parent_id, :suggested_answer, :text, :section_id,
   								:question_format_id,:options_attributes,
   								:suggested_answers_attributes
+  #validation - start
+  validates :section, :presence => true
+  validates :question_format, :presence => true
+  validates :text, :length => { :minimum => 1 }
+  validates :number,numericality: { only_integer: true, :greater_than => 0 }
+  #validation - end
 
 	def to_s
         "#{text}"
