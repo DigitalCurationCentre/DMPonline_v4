@@ -30,7 +30,7 @@ ActiveAdmin.register Question do
             link_to dmptemplate.section.version.phase.dmptemplate.title, [:admin, dmptemplate.section.version.phase.dmptemplate]
            end 
         end
-        default_actions
+        actions
     end
   
   

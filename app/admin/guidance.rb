@@ -25,7 +25,7 @@ ActiveAdmin.register Guidance do
 	    column I18n.t('admin.guidance_group') do |guidance| 
 	    	(guidance.guidance_groups.map{|t_q| link_to t_q.name, [:admin, t_q]}).join(', ').html_safe
 	    end  	
-        default_actions
+        actions
     end
   
     #show details of a question

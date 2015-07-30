@@ -24,7 +24,7 @@ ActiveAdmin.register Version do
 	   		end
      	end
             
-        default_actions
+        actions
       end
   
   #show details of a version

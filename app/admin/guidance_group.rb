@@ -19,7 +19,7 @@ ActiveAdmin.register GuidanceGroup do
             (t.dmptemplates.map{|t_q| link_to t_q.title, [:admin, t_q]}).join(', ').html_safe
         end	
         
-        default_actions
+        actions
     end
   
     #show details of guidance group

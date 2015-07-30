@@ -24,7 +24,7 @@ ActiveAdmin.register UserOrgRole do
             end
         end
         
-        default_actions
+        actions
     end
   
     show do

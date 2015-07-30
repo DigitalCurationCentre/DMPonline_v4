@@ -1,5 +1,7 @@
 module Settings
   class Dmptemplate < RailsSettings::SettingObject
+    
+    attr_accessible :var, :target, :target_id, :target_type
 
     VALID_FONT_FACES = [
       'Arial, Helvetica, Sans-Serif',

@@ -13,7 +13,7 @@ ActiveAdmin.register QuestionFormat do
             link_to n.title, [:admin, n]
         end
             
-        default_actions
+        actions
     end
   
     # show Template details

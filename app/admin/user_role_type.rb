@@ -18,7 +18,7 @@ ActiveAdmin.register UserRoleType do
             end
   		end
   	
-        default_actions
+        actions
     end
 
 end

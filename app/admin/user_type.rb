@@ -13,7 +13,7 @@ ActiveAdmin.register UserType do
             link_to user_n.name, [:admin, user_n]
         end
      	
-        default_actions
+        actions
     end
   
   # show Template details

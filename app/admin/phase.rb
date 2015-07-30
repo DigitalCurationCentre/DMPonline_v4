@@ -22,7 +22,7 @@ ActiveAdmin.register Phase do
             end	
         end
         
-        default_actions
+        actions
     end
   
     #show details of a phase

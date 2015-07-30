@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.13'
+gem 'rails', '3.2.22'
 
 gem 'mysql2'
 gem 'omniauth'
@@ -19,31 +19,32 @@ group :development do
   gem "binding_of_caller"
 end
 
-gem 'uglifier', '>= 1.0.3'
+gem 'uglifier'
 gem 'less-rails'
-
 gem 'therubyracer', '0.11.4', platforms: :ruby
 gem 'libv8'
+
+
 gem 'twitter-bootstrap-rails'
 gem 'sass-rails',   '~> 3.2.3'
-gem 'sass', '3.2.10'
+gem 'sass' 
 
-gem 'jquery-rails', "2.3.0"
+gem 'jquery-rails'
 #gem 'jquery-ui-rails'
 
 gem 'tinymce-rails'
 gem 'friendly_id'
-gem 'contact_us', '~> 0.4.0'
+gem 'contact_us' 
 
 #implementation of forms
-gem 'activeadmin'
+gem 'activeadmin', '1.0.0.pre1'
 
 #to allow cloning of objects
 gem 'amoeba'
 
 # devise for user authentication
-gem 'devise', '3.0.0'
-gem 'devise_invitable', '>= 1.2.1'
+gem 'devise'
+gem 'devise_invitable'
 
 #cancan for usergroups
 gem 'cancan'
@@ -77,6 +78,5 @@ gem 'feedzirra', '0.5.0'
 
 # To use debugger
 # gem 'debugger'
-
 gem 'ledermann-rails-settings'
 gem 'jbuilder'

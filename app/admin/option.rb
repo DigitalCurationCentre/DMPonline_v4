@@ -25,7 +25,7 @@ ActiveAdmin.register Option do
             end  
         end
         
-        default_actions
+        actions
     end
   
     #show details of a section

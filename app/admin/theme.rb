@@ -18,7 +18,7 @@ ActiveAdmin.register Theme do
   		end
   	end
   	
-  	default_actions
+  	actions
   end
   
   #show details of a theme

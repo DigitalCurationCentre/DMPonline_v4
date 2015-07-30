@@ -12,7 +12,7 @@ ActiveAdmin.register Role do
             link_to role_name.name, [:admin, role_name]
         end
 
-        default_actions
+        actions
     end
       
   
