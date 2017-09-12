@@ -207,12 +207,7 @@
                     <div class="accordion-heading">
                         <a class="accordion-guidance-link"  data-parent="#<%= question.id %>-guidance" href="#collapse-guidance-<%= question.id%>">
                             <div class="accordion_heading_text">
- 				      <% if I18n.locale == :fr %>
-                                                        <%= t('helpers.guidance')%> <%= question.section.organisation.abbreviation %>
-                                                <% else %>
-<%= question.section.organisation.abbreviation %> <%= t('helpers.guidance')%>
-<% end %>
-
+                               <%= question.section.organisation.abbreviation %>
                             </div>
                             <span class="plus-laranja"> </span></a>
                     </div>
