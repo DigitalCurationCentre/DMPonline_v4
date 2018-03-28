@@ -1,5 +1,8 @@
 = DMPonline v4
-
+== This is deprecated code - DO NOT USE - Please refer to https://github.com/DMPRoadmap/roadmap
+==
+=== Old documentation follows:
+==
 DMPonline is the DCC's data management planning tool, available at https://dmponline.dcc.ac.uk
 
 Development of the DMPonline by the Digital Curation Centre has been funded by JISC.  JISC inspires UK colleges and universities in the innovative use of digital technologies, helping to maintain the UK's position as a global leader in education. www.jisc.ac.uk
@@ -31,7 +34,6 @@ You may also find the following resources handy:
 
 * The Getting Started Guide: http://guides.rubyonrails.org/getting_started.html
 * Ruby on Rails Tutorial Book: http://www.railstutorial.org/
-
 
 == Copyright
 
